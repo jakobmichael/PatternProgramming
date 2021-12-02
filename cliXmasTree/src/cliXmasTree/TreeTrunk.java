@@ -10,12 +10,9 @@ public class TreeTrunk {
 		this.height = height;
 	}
 
-	public TreeTrunk(int width) {
-		this.width = width;
-	}
-
-	public void printTreeTrunk() {
+	public void printTreeTrunk() throws InterruptedException {
 		for (int i = 1; i <= this.height; i++) {
+			Thread.sleep(500);
 			for (int k = 1; k <= this.width; k++) {
 				System.out.print(" ");
 			}

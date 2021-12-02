@@ -11,8 +11,9 @@ public class TreeTop {
 		this.width = width;
 	}
 
-	public void printTreeTop() {
+	public void printTreeTop() throws InterruptedException {
 		for (int i = 1; i <= this.height; i++) {
+			Thread.sleep(500);
 			for (int k = 1; k <= this.width - i + 1; k++) {
 				System.out.print(" ");
 			}
